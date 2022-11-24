@@ -1,12 +1,46 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  .hero_name{
-font-size: 4rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hero__name {
+  display: block;
+  font-size: 4rem;
+  text-decoration: none;
+  animation: zoom 1s ease-in-out 0s infinite alternate;
+}
+
+.hero__letter {
+  display: inline-block;
+  position: relative;
+  transition: filter 1s ease-in-out;
+
+}.hero__letter:hover {
+  filter: brightness(0.5);
+}
+/*brillo*/
+
+
+.hero__letter::before {
+  content: var(--letter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(0.25rem);
+  transform: scale(1.125);
+}
+
+.hero__letter::after {
+  content: var(--letter);
+  position: absolute;
+  top: 87.5%;
+  left: 0;
+  filter: blur(0.125rem);
+  transform: rotateX(137.5deg);
+}
+
   .hero__letter:nth-child(1){
     color: aquamarine;
   }
