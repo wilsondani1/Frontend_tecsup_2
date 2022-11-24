@@ -1,4 +1,18 @@
 
+.section{
+padding-top:var(--padding-section) ;
+padding-bottom:var(--padding-section) ;
+
+}
+
+.seccion--hero{
+background-image: url(image.png);
+background-position: center;
+background-size: cover;
+box-sizing: border-box;
+min-height: 100vh;
+}
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;

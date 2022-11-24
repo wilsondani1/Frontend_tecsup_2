@@ -1,0 +1,27 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .hero_name{
+font-size: 4rem;
+  }
+  .hero__letter:nth-child(1){
+    color: aquamarine;
+  }
+  .hero__letter:nth-child(2){
+    color: rgb(213, 235, 127);
+  }
+  .hero__letter:nth-child(3){
+    color: rgb(77, 13, 196);
+  }
+  .hero__letter:nth-child(4){
+    color: rgb(15, 239, 71);
+  }
+  .hero__letter:nth-child(5){
+    color: rgb(245, 245, 239);
+  }
+  .hero__letter:nth-child(6){
+    color: rgb(255, 133, 127);
+  }
