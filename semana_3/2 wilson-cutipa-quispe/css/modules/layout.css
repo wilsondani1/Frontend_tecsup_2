@@ -1,16 +1,14 @@
-
-.section{
-padding-top:var(--padding-section) ;
-padding-bottom:var(--padding-section) ;
-
+.section {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
 }
 
-.seccion--hero{
-background-image: url(image.png);
-background-position: center;
-background-size: cover;
-box-sizing: border-box;
-min-height: 100vh;
+.section--hero {
+  background-image: url('https://fondosmil.com/fondo/12534.jpg');
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 50vh;
 }
 
 .container {
@@ -32,4 +30,14 @@ min-height: 100vh;
 .f-elements--center {
   align-items: center;
   justify-content: center;
+}
+
+.f-elements--responsive {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .f-elements--responsive {
+    flex-direction: row;
+  }
 }
