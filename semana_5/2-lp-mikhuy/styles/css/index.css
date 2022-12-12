@@ -1,9 +1,18 @@
 @import './modules/variables.css';
 
 .body {
-  background-color: var(--primary-theme-color);
+
+  
+  background-color: var(--primary-theme-color); 
   color: var(--primary-text-color);
   font-family: var(--primary-font-family);
   margin: 0;
 }
 
+.main{
+  background-image: url(https://i.dietdoctor.com/es/wp-content/uploads/2022/02/PMP_landing_page_H-2.jpeg?auto=compress%2Cformat&w=1600&h=657&fit=crop);
+ background-position:center ;
+
+  background-size: cover;
+  min-height: 100vh;
+}
