@@ -14,100 +14,87 @@
 </head>
 
 <body class="bg-dark text-light d-flex flex-column" style="min-height: 100vh;">
-  <header class="fixed-top bg-dark shadow py-2">
-    <div class="container">
-      <h1 class="fs-2 text-center m-0">Pokémons CRUD</h1>
-    </div>
-  </header>
-  <main class="overflow-hidden">
-    <section class="pt-5">
+    <header class="fixed-top bg-dark shadow py-2">
       <div class="container">
-        <h2 class="fs-3 text-info text-center">WILSON</h2>
-        <div class="row g-4">
-          <div class="col-md-8">
-            <div class="table-responsive">
-              <table
-                class="table table-sm table-dark table-striped table-hover table-bordered align-middle shadow text-center">
-                <caption>Listado de Pokémons</caption>
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Nombre</th>
-                    <th>Tipo</th>
-                    <th>Hp</th>
-                    <th>Ataque</th>
-                    <th>Especial</th>
-                    <th>Imagen</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Pikachu</td>
-                    <td>Eléctrico</td>
-                    <td>250</td>
-                    <td>Trueno</td>
-                    <td>Voltio</td>
-                    <td>
-                      <img
-                        src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-blue-version/8/89/Pikachu.jpg"
-                        alt="Pikachu" class="img-fluid" style="max-width: 128px;" />
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="8" class="text-center fs-6">XXXXXXXXXXXXXXXXXXXX
-
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
+        <h1 class="fs-2 text-center m-0">Pokémons CRUD</h1>
+      </div>
+    </header>
+    <main class="overflow-hidden">
+      <section class="py-5">
+        <div class="container">
+          <h2 class="fs-3 text-info text-center">wilson cutipa </h2>
+          <div class="row g-4">
+            <div class="col-md-8">
+              <div class="table-responsive shadow">
+                <table
+                  class="table table-sm table-dark table-striped table-hover table-bordered align-middle text-center">
+                  <caption>Listado de Pokémons</caption>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Nombre</th>
+                      <th>Tipo</th>
+                      <th>Hp</th>
+                      <th>Ataque</th>
+                      <th>Especial</th>
+                      <th>Imagen</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tBodyPokemons"></tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="8" class="text-center fs-6">XXXXXXXXXXXXXXXXXXXX
+                        S
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <form class="d-flex flex-column gap-3 shadow" id="formPokemon">
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-transparent text-light" id="name" placeholder="Nombre" />
+                  <label for="name">Nombre</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-transparent text-light" id="type" placeholder="Tipo" />
+                  <label for="type">Tipo</label>
+                </div>
+                <div class="form-floating">
+                  <input type="number" class="form-control bg-transparent text-light" id="hp" placeholder="Hp" />
+                  <label for="hp">Hp</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-transparent text-light" id="attack" placeholder="Ataque" />
+                  <label for="attack">Ataque</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-transparent text-light" id="special" placeholder="Especial" />
+                  <label for="special">Especial</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-transparent text-light" id="imgUrl"
+                    placeholder="Url de Imagen" />
+                  <label for="imgUrl">Url de Imagen</label>
+                </div>
+                <button class="btn btn-outline-light btn-lg w-100">Enviar</button>
+              </form>
             </div>
           </div>
-          <div class="col-md-4">
-            <form class="d-flex flex-column gap-3">
-              <div class="form-floating">
-                <input type="text" class="form-control bg-transparent text-light" id="name" placeholder="Nombre"
-                  required />
-                <label for="name">Nombre</label>
-              </div>
-              <div class="form-floating">
-                <input type="text" class="form-control bg-transparent text-light" id="type" placeholder="Tipo"
-                  required />
-                <label for="type">Tipo</label>
-              </div>
-              <div class="form-floating">
-                <input type="number" class="form-control bg-transparent text-light" id="hp" placeholder="Hp" required />
-                <label for="hp">Hp</label>
-              </div>
-              <div class="form-floating">
-                <input type="text" class="form-control bg-transparent text-light" id="attack" placeholder="Ataque"
-                  required />
-                <label for="attack">Ataque</label>
-              </div>
-              <div class="form-floating">
-                <input type="text" class="form-control bg-transparent text-light" id="special" placeholder="Especial"
-                  required />
-                <label for="special">Especial</label>
-              </div>
-              <div class="form-floating">
-                <input type="text" class="form-control bg-transparent text-light" id="imgUrl"
-                  placeholder="Url de Imagen" required />
-                <label for="imgUrl">Url de Imagen</label>
-              </div>
-              <button class="btn btn-outline-light btn-lg w-100">Enviar</button>
-            </form>
-          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-dark shadow py-2 mt-auto">
-    <h6 class="text-center m-0">Desarrollado por wilson </h6>
-  </footer>
-
-  <script src="./js/index.js" type="module" defer></script>
-</body>
-
-</html>
+      </section>
+    </main>
+    <footer class="bg-dark shadow py-2 mt-auto">
+      <h6 class="text-center m-0">Desarrollado por Elliot Garamendi</h6>
+    </footer>
+  
+    <script src="./js/index.js" type="module" defer></script>
+  </body>
+  
+  </html>
+  Footer
+  © 2022 GitHub, Inc.
+  Footer navigation
+  Terms
+  Priva
