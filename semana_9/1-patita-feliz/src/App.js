@@ -1,10 +1,12 @@
 
 import './App.css';
+import Header from './components/secions/Header';
 
 function App() {
-  return (
-   <h1>Patita feliz</h1>
-  );
+return(
+ <Header />
+);
+
 }
 
 export default App;
