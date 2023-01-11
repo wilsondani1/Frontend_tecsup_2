@@ -7,7 +7,7 @@ import Appointments from './pages/Appointments';
 function App() {
 
     const company = {
-    name: 'Patita Feliz',
+    name: '🐾Patita Feliz🐾',
     slogan : '🏆La mejor veterinaria del Pais🏆'
     };
 

@@ -1,24 +1,10 @@
-import { useState } from "react";
+import AppointmentsForm from "../components/Appointments/AppointmentsForm";
 
 const Appointments = () => {
-const  [cuantity,setCuantity] = useState(1); /* se epuede usar abreviado usf*/ 
-
-
-const createAppointments = () =>{
-setCuantity (cuantity + 1);
-};
-
-console.log("component");
-
   return(
     <section className="py-4">
-      <div className="container d-flex d-flex justify-content-between" >
-       
-        <div  class="badge text-bg-primary d-flex align-items-center">
-        Appointments <span class="badge text-bg-secondary">{cuantity}</span>
-        </div>
-
-        <button className="btn btn-primary"onClick={createAppointments}> Registrar cita</button>
+      <div className="container d-flex justify-content-between" >
+        <AppointmentsForm/>
       </div>
     </section>
    
