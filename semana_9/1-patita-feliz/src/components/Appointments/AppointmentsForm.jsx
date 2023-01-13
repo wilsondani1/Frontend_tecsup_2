@@ -85,12 +85,13 @@ const  AppointmentsForm = () => {
 
             </form>
             <ul>
-                <li>{AppointmentsForm.nombre}</li>
+                
                 <li>{AppointmentsForm.mascota}</li>
                 <li>{AppointmentsForm.propietario}</li>
                 <li>{AppointmentsForm.fecha}</li>
                 <li>{AppointmentsForm.hora}</li>
                 <li>{AppointmentsForm.sintomas}</li>
+                
 
             </ul>
         </div>
