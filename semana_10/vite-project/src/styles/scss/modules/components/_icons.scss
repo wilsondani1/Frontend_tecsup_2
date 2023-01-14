@@ -21,8 +21,8 @@
   
     &--close,
     &--menu {
-      @include desktop {
-        display: none;
-      }
-    }
+    @include desktop {
+    display: none;
+       }
+     }
   }

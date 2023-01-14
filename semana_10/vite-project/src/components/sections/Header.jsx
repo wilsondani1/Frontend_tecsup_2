@@ -8,12 +8,12 @@ const Header = () => {
   const modal = useRef();
 
   const showMenu = () => {
-    header.current.classList.add('header--menu');
+    header.current.classList.add('header--move');
     modal.current.classList.add('modal--show');
   };
 
   const hideMenu = () => {
-    header.current.classList.remove('header--menu');
+    header.current.classList.remove('header--move');
     modal.current.classList.remove('modal--show');
   };
 
@@ -77,22 +77,26 @@ const Header = () => {
                 
                 </Link>
               </li>
-              <li className='icon icon-close' onClick={hideMenu}>
+
+              <li className='icon icon--close' >
                 ❌
               </li>
+
             </ul>
+
           </div>
-          <div className='f-elements f-elemntes--center'>
+
+          <div className='f-elements f-elementes--center'>
           <select>
             <option value="value1">🌑</option>
-            <option value="value1">☀</option>
-            <option value="value1">💻</option>
+            <option value="value2">☀</option>
+            <option value="value3">💻</option>
           </select>
-          <button cclassName="icon"
-              onClick={showMenu}
-              > 
-          🍔
-          </button>
+              <button className='icon'
+                  onClick={showMenu}
+                  > 
+              🍔
+              </button>
           </div>
         </div>
       </nav>
