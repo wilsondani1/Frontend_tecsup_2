@@ -1,10 +1,28 @@
+import {  useState } from "react";
+import AppointmentsCards from "../components/Appointments/AppointmentsCards";
 import AppointmentsForm from "../components/Appointments/AppointmentsForm";
 
 const Appointments = () => {
+  const [appointments, setAppointments] = useState([]);
+
+// useEffect (() => {
+//   console.log(appointments)
+// }, [appointments]);
+
+
+
+
   return(
     <section className="py-4">
       <div className="container d-flex justify-content-between" >
-        <AppointmentsForm/>
+        <AppointmentsForm
+          appointments={appointments}
+          setAppointments={setAppointments}
+        />
+        <AppointmentsCards
+         appointments={appointments}
+         setAppointments={setAppointments}
+        />
       </div>
     </section>
    
