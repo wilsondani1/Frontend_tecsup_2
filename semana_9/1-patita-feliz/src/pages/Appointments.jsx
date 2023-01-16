@@ -1,5 +1,6 @@
 import {  useState } from "react";
 import AppointmentsCards from "../components/Appointments/AppointmentsCards";
+
 import AppointmentsForm from "../components/Appointments/AppointmentsForm";
 
 const Appointments = () => {
@@ -17,6 +18,7 @@ const Appointments = () => {
         />
         <AppointmentsCards
          appointments={appointments}
+         setAppointments={setAppointments}
         
         />
       </div>
