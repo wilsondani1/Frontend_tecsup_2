@@ -10,18 +10,16 @@ const Appointments = () => {
 // }, [appointments]);
 
 
-
-
   return(
     <section className="py-4">
-      <div className="container d-flex justify-content-between" >
+      <div className="container " >
         <AppointmentsForm
           appointments={appointments}
           setAppointments={setAppointments}
         />
         <AppointmentsCards
          appointments={appointments}
-         setAppointments={setAppointments}
+        
         />
       </div>
     </section>
