@@ -5,14 +5,12 @@ import AppointmentsForm from "../components/Appointments/AppointmentsForm";
 const Appointments = () => {
   const [appointments, setAppointments] = useState([]);
 
-// useEffect (() => {
-//   console.log(appointments)
-// }, [appointments]);
+
 
 
   return(
     <section className="py-4">
-      <div className="container " >
+      <div className="container row mx-auto" >
         <AppointmentsForm
           appointments={appointments}
           setAppointments={setAppointments}

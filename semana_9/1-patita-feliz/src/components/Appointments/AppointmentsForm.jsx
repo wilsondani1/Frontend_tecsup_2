@@ -30,7 +30,7 @@ const  AppointmentsForm = ({appointments, setAppointments}) => {
           };
           
     return (
-        <div className="d-flex flex-column gap-3">
+        <div className="col-md-6 d-flex flex-column gap-3">
             <h3 className  ="text-center m-1">🚑Crear cita🚑</h3>
             <form className ="text-dark" onSubmit={handleSubmit}>
             <div className ="form-floating mb-3">
