@@ -1,27 +1,20 @@
-import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../redux/slices/homeSlice";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import HomeHero from "../components/home/HomeHero";
+import useHome from "../hooks/useHome";
+import { fetchReadHeroProducts } from "../redux/thunks/homeThunk";
 
 const HomePage = () => {
-  const { value } = useSelector(state => state.home);
   const dispatch = useDispatch();
+  const { heroProducts } = useHome();
+
+  useEffect(() => {
+    dispatch(fetchReadHeroProducts());
+  }, []);
 
   return (
-    <div>
-      <button
-        aria-label="Increment value"
-        onClick={() => dispatch(increment())}
-      >
-        Increment
-      </button>
-      <span>{value}</span>
-      <button
-        aria-label="Decrement value"
-        onClick={() => dispatch(decrement())}
-      >
-        Decrement
-      </button>
-    </div>
+    <HomeHero heroProducts={heroProducts} />
   );
-}
+};
 
 export default HomePage;

@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { BsList, BsXCircle } from "react-icons/bs";
 import { Link, NavLink } from 'react-router-dom';
-import logoEAKON from '../../assets/img/Wilson_logo.jpg';
+import logoEAKON from '../../assets/img/logo-eakon.webp';
 
 const Header = () => {
   const header = useRef();
