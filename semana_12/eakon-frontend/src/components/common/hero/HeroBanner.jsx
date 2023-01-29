@@ -1,4 +1,4 @@
-import logoEAKON from '../../../assets/img/logo-eakon.webp';
+import logoEAKON from '../../../assets/img/Wilson_logo.jpg';
 
 const HeroBanner = ({ image, title }) => {
   return (

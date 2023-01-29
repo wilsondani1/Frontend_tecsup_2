@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logoEAKON from '../../../assets/img/logo-eakon.webp';
+import logoEAKON from '../../../assets/img/Wilson_logo.jpg';
 
 const ContainersImage = ({ src, alt, className = '' }) => {
   const [numberOfErrors, setNumberOfErrors] = useState(0);
