@@ -1,7 +1,12 @@
 .nav {
-  --padding-nav: 1.5rem;
+  --padding-nav: calc(var(--section-padding) * 0.75);
   padding-top: var(--padding-nav);
   padding-bottom: var(--padding-nav);
+  transition: padding 0.25s;
+
+  &--scroll {
+    --padding-nav: calc(var(--section-padding) * 0.5);
+  }
 
   &__logo {
     display: block;
