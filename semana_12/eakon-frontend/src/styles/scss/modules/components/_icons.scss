@@ -5,33 +5,22 @@
   color: var(--primary-text-color);
   font-size: 2rem;
   padding: 0;
-  filter: brightness(0.75);
+  filter: contrast(0.75);
   cursor: pointer;
-  transition: filter 0.25s, color 0.25s;
+  transition: filter 0.25s;
 
   &:hover {
-    filter: brightness(1);
-  }
-
-  &--xs {
-    font-size: 1.5rem;
-  }
-
-  &--sm {
-    font-size: 1.75rem;
+    filter: contrast(1);
   }
 
   &--close {
     position: absolute;
     top: var(--padding-nav);
     right: var(--container-padding);
-    transition: top 0.25s;
   }
 
   &--close,
   &--menu {
-    color: var(--dark-primary-text-color);
-
     @include desktop {
       display: none;
     }
