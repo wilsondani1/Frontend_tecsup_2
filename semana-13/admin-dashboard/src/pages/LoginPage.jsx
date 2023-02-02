@@ -1,19 +1,22 @@
-import { useEffect } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
-import useUser from "../hooks/useUser";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { UserContext } from "../context/UserContext";
 
-const AuthValidation = () => {
-
+const LoginPage = () => {
   const navigate = useNavigate();
-  const { user } = useUser();
+  const { setUser } = useContext(UserContext);
 
-  useEffect(() => {
-    if (user === false) {
-      navigate('/login');
-    }
-  }, [user]);
+  const handleClickLogin = () => {
+    setUser(true);
+    navigate('/');
+  };
 
-  return (<Outlet />);
-}
+  return (
+    <>
+      <h1>LoginPage</h1>
+      <button onClick={handleClickLogin}>Logear</button>
+    </>
+  );
+};
 
-export default AuthValidation;
+export default LoginPage;
