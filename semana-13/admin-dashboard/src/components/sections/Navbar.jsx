@@ -1,8 +1,14 @@
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { NavLink } from "react-router-dom";
+import { auth } from "../../firebase/firebase";
 import useUser from "../../hooks/useUser";
 
 const Navbar = () => {
   const { user, setUser } = useUser();
+  console.log(auth);
+  createUserWithEmailAndPassword  (auth,'wilson_dani1@hotmail.com','123456789')
+
+
   return (
     <nav>
       <ul>
